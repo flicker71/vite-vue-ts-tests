@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "e2e":"playwright test",
+    "e2e:open":"playwright test --ui",
+    "e2e:codegen":"playwright codegen"
   },
   "dependencies": {
     "vue": "^3.3.11"
