@@ -27,12 +27,10 @@ test('candidature', async ({ page }) => {
     await expect(page.getByRole('heading', { name: 'Demande de candidature' })).toBeVisible();
 });
 
-// test('get started link', async ({ page }) => {
-//   await page.goto('https://playwright.dev/');
+test('Deckad check url', async ({ page }) => {
+    await page.goto('https://deckad.fr/');
 
-//   // Click the get started link.
-//   await page.getByRole('link', { name: 'Get started' }).click();
+  await expect(page).toHaveURL('https://deckad.fr/');
+});
 
-//   // Expects page to have a heading with the name of Installation.
-//   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-// });
+
