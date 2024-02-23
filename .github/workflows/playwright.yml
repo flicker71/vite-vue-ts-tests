@@ -43,4 +43,4 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           repository: ${{ github.repository }}
           event-type: trigger-workflow
-          client-payload: '{"branch": "main"}'
+          client-payload: '{"branch": "master"}'
