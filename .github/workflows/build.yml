@@ -19,7 +19,7 @@ jobs:
     - name: Trigger workflow on main branch
       uses: peter-evans/repository-dispatch@v2
       with:
-        token: ${{ secrets.MY_SECRET_TOKEN }}
+        token: ${{ secrets.GH_TOKEN }}
         repository: ${{ github.repository }}
         event-type: trigger-workflow
         client-payload: '{"branch": "main"}'
